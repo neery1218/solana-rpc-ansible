@@ -1,0 +1,5 @@
+- hosts: localhost
+  become: true
+  become_method: sudo
+  roles:
+     - { role: ./, solana_network: mainnet }
